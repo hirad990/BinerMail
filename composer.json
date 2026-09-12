@@ -1,0 +1,8 @@
+{
+  "name": "binercraft/biner-mail",
+  "description": "BinerMail - professional self-hosted webmail and OAuth provider",
+  "type": "project",
+  "require": {"php": ">=8.2", "ext-curl": "*", "ext-json": "*", "ext-mbstring": "*", "ext-openssl": "*", "phpmailer/phpmailer": "^6.9", "webklex/php-imap": "^6.1"},
+  "autoload": {"psr-4": {"BinerMail\\": "app/"}},
+  "scripts": {"post-install-cmd": ["@php -r \"is_dir('storage') || mkdir('storage',0775,true);\""]}
+}
